@@ -12,7 +12,34 @@
 
 </ion-header>
 
-
-<ion-content padding>
-
-</ion-content>
+<div class="bar bar-subheader head_cat">
+    <div class="row">
+      <div class="col" ng-click="cat_color=1" ng-class="{'border_cat':cat_color==1}"><p>Pizza</p></div>
+      <div class="col" ng-click="cat_color=2"  ng-class="{'border_cat':cat_color==2}"><p>Hot Drinks</p></div>
+      <div class="col" ng-click="cat_color=3"  ng-class="{'border_cat':cat_color==3}"><p>Desserts</p></div>
+      <div class="col" ng-click="cat_color=4"  ng-class="{'border_cat':cat_color==4}"><p>Random</p></div>
+    </div>
+   </div>
+     <ion-content class="has-subheader list_detail">
+     <div class="det_img">
+      <img src="img/det.png" class="animated zoomInLeft"/>
+     </div>
+      
+     <div class="sport_det padding">
+         <div class="rating_res rating_det"> 
+         <span class="rate" ng-repeat="item in rate">
+           <i class="ion-star"></i>
+         </span>
+         <span class="num">(215)</span>
+     </div>
+   
+      <h3 class="animated zoomInLeft">Sesame Noodles</h3>
+      <p class="det_par">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      . Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula.
+       Maecenas at massa eget orci porttitor semper.
+       Sed lobortis magna in faucibus commodo.
+        Ut purus odio, gravida sit amet laoreet at, dictum et urna.
+      </p>
+     </div>
+     </ion-content>
+    

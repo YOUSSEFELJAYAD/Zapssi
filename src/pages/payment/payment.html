@@ -13,6 +13,54 @@
 </ion-header>
 
 
-<ion-content padding>
-
-</ion-content>
+<ion-content class="padding payment">
+    <div class="list">
+        <label class="item item-input">
+          <input type="text" placeholder="Full name">
+        </label>
+        <label class="item item-input">
+          <input type="number" placeholder="Mobile number">
+        </label>
+         <label class="item item-input">
+          <input type="text" placeholder="Address">
+        </label>
+       
+     <!-- <ion-list class="three_radio">
+          <ion-radio ng-model="choice" ng-value="'A'">Large</ion-radio>
+          <ion-radio ng-model="choice" ng-value="'B'">Mid</ion-radio>
+          <ion-radio ng-model="choice"  ng-value="'c'">Small</ion-radio>
+      </ion-list>-->
+      
+      <div class="row radio_styl">
+          <div class="col">
+              <input type="radio" id="large" name="radio">
+              <label for="large"><span></span>Large</label>
+          </div>
+          <div class="col">
+              <input type="radio" id="mid" name="radio">
+              <label for="mid"><span></span>Mid</label>
+          </div>
+          <div class="col">
+              <input type="radio" id="small" name="radio">
+              <label for="small"><span></span>Small</label>
+          </div>
+      </div>
+  
+    <label class="item item-input txt_area">
+      <textarea placeholder="Note" rows="4"></textarea>
+    </label> 
+    
+     
+          
+    <ion-toggle><img src="img/visa.png"/></ion-toggle>
+    
+      <label class="item item-input">
+         <input type="text" placeholder="Card number">
+      </label>  
+      
+      <a href="#" class="button button-block button-positive add_btn">
+      Pay
+      </a> 
+      
+    </div>
+  </ion-content>

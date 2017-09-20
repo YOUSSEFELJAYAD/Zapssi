@@ -12,7 +12,36 @@
 
 </ion-header>
 
-
-<ion-content padding>
-
-</ion-content>
+<ion-content class="det_content">
+    <div class="padding">
+       <img src="img/001.png"/>
+       <h3>Restaurant name<span class="price">120.00$</span></h3>
+       <p>Sesame Noodles</p>
+       
+       <p class="parag_modal">
+           Sesame Noodles -- a super quick and easy to make that's always delicious! Perfect as a side dish, or add in your favorite protein or veggies to make this a main course.
+       </p>
+       
+       <div class="row qty_div">
+        <div class="col col-20">
+            <button class="button button-icon" ng-click="increment_val()">
+             <i class="ion-ios-plus-empty"></i>
+            </button>
+        </div>
+        
+        <div class="col col-25">
+            <label class="item item-input">
+               <input type="number" value="{{value}}">
+            </label>
+        </div>
+        
+        <div class="col col-20">
+            <button class="button button-icon" ng-click="decrement_val()">
+             <i class="ion-ios-minus-empty"></i>
+            </button>
+        </div>
+       </div>
+       
+      </div>
+       
+    </ion-content>

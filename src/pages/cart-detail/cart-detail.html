@@ -12,7 +12,62 @@
 
 </ion-header>
 
-
-<ion-content padding>
-
+<ion-content class="cart_detail">
+    <div
+       collection-repeat="item in cart"
+       collection-item-width="'100%'"
+       collection-item-height="130"> 
+      
+      <div class="delete_item">
+         <i class="ion-android-close"></i>
+      </div>
+      
+       <div class="row">
+         <div class="col col-33">
+             <img src="{{item.img}}"/>
+         </div>
+         <div class="col det_content">
+           <h3>Restaurant name</h3>
+           <p>{{item.title}}</p>
+           <p class="price">120.00$</p>
+           
+           <div class="row qty_div">
+        <div class="col col-20">
+            <button class="button button-icon" ng-click="increment(item.count,$index)">
+             <i class="ion-ios-plus-empty"></i>
+            </button>
+        </div>
+        
+        <div class="col col-25">
+            <label class="item item-input">
+               <input type="number" value="{{item.count}}">
+            </label>
+        </div>
+        
+        <div class="col col-20">
+            <button class="button button-icon"  ng-click="decrement(item.count,$index)">
+             <i class="ion-ios-minus-empty"></i>
+            </button>
+        </div>
+       </div>
+       
+         </div>
+       </div>
+    </div>
+    <div class="row total_price">
+      <div class="col">
+       <a href="#/cart_detail"  ng-click="closedetail_modal()" class="button button-block button-positive add_btn">
+        Delete all
+        </a> 
+      </div>
+       <div class="col">
+        <p>TOTAL</p>
+        <span>480.00$</span>
+       </div>
+    </div>
+     <div class="padding complete">   
+        <a href="#/app/payment"  ng-click="closedetail_modal()" class="button button-block button-positive add_btn">
+        Complete order
+        </a> 
+     </div>   
 </ion-content>

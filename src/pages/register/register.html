@@ -13,6 +13,53 @@
 </ion-header>
 
 
-<ion-content padding>
-
-</ion-content>
+<ion-content class="login_page register_page padding">
+    <h3 class="animated tada">Register</h3>
+      <form>
+        <div class="list">
+          <label class="item item-input">
+            <input type="text" placeholder="First Name">
+          </label>
+          <label class="item item-input">
+            <input type="text" placeholder="Last Name">
+          </label>
+          <label class="item item-input">
+           <input type="text" placeholder="Birth Date">
+          </label>
+           <label class="item item-input item-select">
+            <select>
+              <option  selected>Country</option>
+              <option>Egypt</option>
+              <option>China</option>
+            </select>
+          </label>
+           <label class="item item-input">
+           <input type="email" placeholder="Mail">
+          </label>
+         <label class="gen_type">Select Gender</label> 
+         <div class="radio_div">
+          <label class="item item-radio">
+            <input type="radio" name="group">
+            <div class="item-content">
+              Female
+            </div>
+            <i class="radio-icon ion-checkmark"></i>
+          </label>
+            <label class="item item-radio">
+            <input type="radio" name="group">
+            <div class="item-content">
+              Male
+            </div>
+            <i class="radio-icon ion-checkmark"></i>
+          </label>
+          </div>
+        </div>
+        <a href="#/app/home" class="button button-block button-positive forg_btn animated tada">
+          Register
+        </a>
+         <a href="#/login" class="button button-block button-positive register animated tada">
+          Back
+         </a>
+      </form>
+    </ion-content>
+    

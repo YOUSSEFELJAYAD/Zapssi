@@ -12,7 +12,44 @@
 
 </ion-header>
 
-
-<ion-content padding>
-
-</ion-content>
+<ion-content class="login_page">
+    <div class="logo">
+      <img src="img/logo.png" class="animated tada"/>
+      <p class="animated tada"><span>Welcome</span></br>
+      In Your Restaurant</p>
+    </div>
+    <h3>Login</h3>
+    <form class=" padding animated fadeInUp">
+      <div class="list list-inset">
+        <label class="item item-input">
+          <img class="icon placeholder-icon" src="img/man.png"/>
+          <input type="text" placeholder="username">
+        </label>
+         <label class="item item-input">
+          <img class="icon placeholder-icon" src="img/lock.png"/>
+          <input type="password" placeholder="---------------">
+        </label>
+     </div>
+     
+     <div class="row two_btn">
+       <div class="col">
+       <a href="#/app/home" class="button button-block button-positive forg_btn">
+         Login
+       </a>
+       </div>
+        <div class="col">
+       <a href="#/register" class="button button-block button-positive new_btn">
+        Register
+       </a>
+       </div>
+      </div>
+      
+       <button class="button button-block button-positive log_face">
+        Log in with facebook
+      </button>
+        <button ng-click="forget_password()" class="button button-block button-positive for_btn">
+        Forget Password
+      </button>
+    </form>
+     
+  </ion-content>
